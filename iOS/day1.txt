@@ -1,4 +1,4 @@
-study JavaScriptCore
+study JavaScriptCore  http://blog.csdn.net/chenyong05314/article/details/9239319
 
 PS: embed bundle folder cannot be the root
 
