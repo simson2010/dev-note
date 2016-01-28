@@ -1,1 +1,8 @@
 study JavaScriptCore
+
+PS: embed bundle folder cannot be the root
+
+basic method to execute javascript from iOS native code:
+
+- (JSValue *)evaluateScript:(NSString *)script;
+- (JSValue *)evaluateScript:(NSString *)script withSourceURL:(NSURL *)sourceURL
