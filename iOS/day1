@@ -2,6 +2,45 @@ study JavaScriptCore
 
 PS: embed bundle folder cannot be the root
 
+WKWebView:
+
+2 delegate : 
+    [self.webview setNavigationDelegate:self];
+    self.webview.UIDelegate = self;
+to handle navigation and UI change (etc. alert, confirm box);
+
+handle alert box:
+// handle javascript alert panel with message
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
+{
+    NSLog(@"ViewController.runJavaScriptAlertPanelWithMessage");
+    NSLog(@"Message->%@",message);
+    UIAlertController *uiAlert = [UIAlertController alertControllerWithTitle:@"Native Alert"
+                                                                     message:message
+                                                              preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *uiAction = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * _Nonnull action) {
+                                                         //when alert completed, call completionHandler
+                                                         //otherwise will get exection,
+                                                         //and cannot call this at the end of method;
+                                                         completionHandler();
+                                                     }];
+    [uiAlert addAction:uiAction];
+    [self presentViewController:uiAlert animated:YES completion:^(void){
+
+    }];
+
+    //cannot call here, it will return the control to javascript, then the second alert will be terminated.
+    //completionHandler();
+}
+
+To load bundle or sandbox file from file:// url :
+[self.webview loadFileURL:[NSURL URLWithString:filePath] allowingReadAccessToURL:[NSURL URLWithString:filePath]];
+
+allowingReadAccessToURL - should be presented the path that allow to access all the files under it;
+
+
 basic method to execute javascript from iOS native code:
 
 - (JSValue *)evaluateScript:(NSString *)script;
