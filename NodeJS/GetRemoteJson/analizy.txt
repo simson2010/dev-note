@@ -1,0 +1,30 @@
+
+req.post("http://v2.qun.hk/v1/oauth/checkphone",{form:{"phone":"18578610193"}},function(err,resp,body){console.log(body);})
+
+http://v2.qun.hk/v1/oauth/loginbypassword
+
+req.post("http://v2.qun.hk/v1/oauth/loginbypassword",{form:{"username":"18578610193","password":"eric0219"}},function(err,resp,body){console.log(body);})
+
+http://v2.qun.hk/v1/phonebook/members?keyword=&page=1&id=a5228e577687
+
+req("http://v2.qun.hk/v1/phonebook/members?keyword=&page=1&id=a5228e577687",function(err,resp,body){ console.log(body)})
+
+
+{
+	"authorize": {
+		"token": "qhJGcpqHaZGcOh7d",
+		"user_id": "oYTgBuLB6sM_Aq8XwRC9ZsU77kI0",
+		"expires_in": 1467697012,
+		"platform": 3
+	},
+	"user": {
+		"user_id": "oYTgBuLB6sM_Aq8XwRC9ZsU77kI0",
+		"avatar": "http:\/\/wx.qlogo.cn\/mmopen\/CoVhIIEG1UoaibY1ar2QgJIMSwPslf0cTjmnxXAJic4TaibwZQ8715DfOmHp21c3MLZZDXmWdv9FwPFibHaPHSFGWzYX61dAKiaGq\/0",
+		"nickname": "Eric\u6f58"
+	}
+}
+
+auth.token	qhJGcpqHaZGcOh7d
+auth.user_id	oYTgBuLB6sM_Aq8XwRC9ZsU77kI0
+auth.expires_in	1467697012
+auth.platform	3
