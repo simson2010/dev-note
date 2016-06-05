@@ -1,6 +1,7 @@
 var _request = require("request");
 var _fs = require("fs");
 var util = require("util");
+var exec = require('child_process').exec,child;
 
 var req = _request.defaults({jar:true});
 
@@ -8,7 +9,6 @@ var FileCookieStore = require('tough-cookie-filestore');
 // NOTE - currently the 'cookies.json' file must already exist!
 var j = req.jar()
 //req.jar(new FileCookieStore('cookies.json'));
-
 
 
 var options = {
@@ -33,6 +33,28 @@ var _url_getphonebook = "http://v2.qun.hk/v1/phonebook/members?keyword=&page=%s&
 
 var logonData ;
 
+var resultDir = "./results";
+
+function init()
+{
+	 _fs.stat(resultDir, (err)=>{
+		if(!err)
+		{
+			//dir exist; then no error
+			
+			child = exec('rm -rf ' + resultDir,function(err,out) { 
+					_fs.mkdirSync(resultDir);
+					checkphone();
+				});
+		} 
+		else
+		{
+			//dir not exist, then error == null
+			_fs.mkdirSync(resultDir);
+			checkphone();
+		}
+	});
+}
 
 function checkphone()
 {
@@ -114,5 +136,5 @@ function getPhonebookMember(page)
 	 });
 }
 
+init();
  
-checkphone();
