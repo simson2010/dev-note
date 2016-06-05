@@ -1,0 +1,37 @@
+{
+  "name": "GetRemoteJson",
+  "description": "Download phone data using request.",
+  "tags": [
+    "http",
+    "simple",
+    "util",
+    "utility"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Eric Poon",
+    "email": "ericpoon2001@gmail.com"
+  },
+  "repository": {
+    
+  },
+  "bugs": {
+
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "request": ">0.6.0",
+    "tough-cookie-filestore": ">=0.0.1"
+  },
+  "scripts": {
+    "download": "node App.js",
+	"grepresult": "node grepresult.js"
+  },
+  "devDependencies": {
+    "request": ">0.6.0",
+    "tough-cookie-filestore": ">=0.0.1"
+  }
+}
