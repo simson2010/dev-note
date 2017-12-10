@@ -36,7 +36,7 @@ prompt_context() {
 }
 ```
 
-#vi command 
+# vi command 
 - G : jump to end of file
 - gg or 1G : jump to beginning of file
 
