@@ -40,3 +40,5 @@ prompt_context() {
 - G : jump to end of file
 - gg or 1G : jump to beginning of file
 
+# URLs
+https://portal.shadowsocks.la/
