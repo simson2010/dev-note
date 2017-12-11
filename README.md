@@ -35,6 +35,10 @@ prompt_context() {
   fi
 }
 ```
+## Or 
+```
+echo "DEFAULT_USER=\"your name\"" >> ~/.zshrc && source ~/.zshrc
+```
 
 # vi command 
 - G : jump to end of file
