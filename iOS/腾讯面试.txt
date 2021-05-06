@@ -1,0 +1,32 @@
+
+1. LLDB调试命令都有哪些  那些场景下用到 bt
+2. view的生命周期 如何监听View是否释放（MLinkFinder） 在什么时机下hook
+3. xcode打包ipa  xcode都做了什么 详细说明123步骤
+4. 项目中遇到难处理的crash 如何分析  如果奔溃到系统函数中如何分析
+
+
+
+// 20k以上 26
+5 fishhook的原理 hook的是导入表还是导出表
+// ASDK // runloop //source //多线程 -》 锁 -〉 runloop
+// 异步渲染
+6. 分析一个复杂的UI界面为什么卡顿  只分析UI层  （忽略 圆角、阴影、）从UIview和CALAyer层面
+// 抖音的二进制重排 静态插桩 动态hook 写汇编
+7 有没有hook objc_messageSend， 方法执行的时间..
+9. synchronized  锁是否可以循环加锁  如何实现的
+25 -40
+
+
+10 VideoToolBox&AudioToolbox 
+11 ijkplayer 网络差的情况下 如何优化
+// 准备
+12 线程组 dispath_group 上传图片的 如果网络差 用户杀掉aPP 如何处理
+13 Clang   假如一个方法内 调用另一个方法（可能会有一些耗时的操作） 如何检测第一个方法的耗时
+14 NSInvocation的底层原理
+15 DYLD 会判断mach-o的segments中判断是否有restrict这个字段.插入动态库 有没有方法可以绕过
+
+// 总结 准备
+项目中遇到的最难的点 如何处理 以及你觉得自己做的最好的一个技术点 分析一下
+下班时间做的做值得分享的事情
+有没有深入阅读苹果的源码底层实现逻辑，有什么收获值得分享的
+
