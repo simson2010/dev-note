@@ -1,4 +1,6 @@
 # dev-note
+![CSDN Bages](./images/csdn_bages.png)
+
 iOS/web/server dev notes, should be daily
 
 # install homebrew 
