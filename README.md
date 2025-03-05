@@ -51,6 +51,6 @@ https://portal.shadowsocks.la/
 
 # AI text to Image
 
-![text to image](https://image.pollinations.ai/prompt/a%20Girl%20in%20blue%20JK%20Skirt?width=512&height=512) 
+![text to image](https://image.pollinations.ai/prompt/a%20Girl%20in%20blue%20JK%20Skirt?width=512&height=512&seed=329382942703723) 
 
 
