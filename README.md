@@ -48,3 +48,9 @@ echo "DEFAULT_USER=\"your name\"" >> ~/.zshrc && source ~/.zshrc
 
 # URLs
 https://portal.shadowsocks.la/
+
+# AI text to Image
+
+![text to image](https://image.pollinations.ai/prompt/a%20Girl%20in%20blue%20JK%20Skirt?width=512&height=512) 
+
+
