@@ -53,4 +53,6 @@ https://portal.shadowsocks.la/
 
 ![text to image](https://image.pollinations.ai/prompt/a%20Girl%20in%20blue%20JK%20Skirt?width=512&height=512&seed=89&model=ai.flux) 
 
+# released
 
+- temp v0.0.1 for HF model file of sentence_transformers
