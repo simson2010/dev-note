@@ -6,3 +6,7 @@ run below in PowerShell console
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
+
+# Reference 
+
+https://www.cnblogs.com/xiaoliangge/p/9124089.html
